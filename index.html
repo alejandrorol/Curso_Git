@@ -23,11 +23,11 @@
                 Es el área de trabajo donde vamos a crear, editar, eliminar los diferentes archivos que formen parte de nuestro trabajo. Muy rara vez estaremos utilizando la consola en esta instancia que básicamente estaría representada en la carpeta donde inicializamos el repositorio.
             </p>
             <ul class="commands">
-                <li><strong>dir || ls</strong>Muestra el contenido del directorio actual.</li>
-                <li><strong>mkdir &lt;name</strong>Crea una carpeta.</li>
-                <li><strong>cd &lt;path</strong>Abre la carpeta o ruta seleccionada.</li>
-                <li><strong>git init</strong>Inicializa un repositorio de GIT.</li>
-                <li><strong>rm -rf .git &lt;</strong>Elimina un repositorio de manera forzada.</li>
+                <li><strong>dir || ls</strong> Muestra el contenido del directorio actual.</li>
+                <li><strong>mkdir &lt;name</strong> Crea una carpeta.</li>
+                <li><strong>cd &lt;path</strong> Abre la carpeta o ruta seleccionada.</li>
+                <li><strong>git init</strong> Inicializa un repositorio de GIT.</li>
+                <li><strong>rm -rf .git &lt;</strong> Elimina un repositorio de manera forzada.</li>
             </ul>
         </article>
         <article>
@@ -35,6 +35,19 @@
             <p>
                 Es el área de control de cambios donde se realizan las capturas de código (snaptshots) y básicamente donde indicamos a que archivos realizamos seguimiento. Una vez realizados los cambios solamente debemos confirmarlos para agregarlos al repositorio.
             </p>
+            <ul class="commands">
+                <li><strong>git status</strong> Muestra el estado del archivo en relación al INDEX</li>
+                    <ul>
+                        <li><strong>untracked</strong> No se está haciendo seguimiento. En caso de pérdida es irrecuperable.</li>
+                        <li><strong>staged: </strong> Se realizó la captura del código, pero no se confirmó.</li>
+                        <li><strong>commited: </strong> Se confirmó la captura y se almacenaron los cambios en el historial.</li>
+                        <li><strong>modified: </strong> El archivo difiere con respecto a la última confirmación.</li>
+                    </ul>
+                <li><strong>git add &lt;file</strong> Agrega los cambios del archivo al INDEX.</li>
+                <li><strong>git diff</strong> Muestra las diferencias entre el INDEX y el Working Directory.</li>
+                <li><strong>git restore --staged &lt;file</strong> Elimina la última captura realizada.</li>
+                <li><strong>git rm --cached &lt;file</strong> Quita el archivo del INDEX, no hace más seguimiento.</li>
+            </ul>
         </article>
         <article>
             <h3>Repository</h3>

@@ -1,0 +1,13 @@
+/*Content Rama-1*/
+/*REGLAS GENERALES*/
+    *{
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body,
+    h1,
+    h2,
+    h3,
+    header p{
+        margin: 0;
+    }

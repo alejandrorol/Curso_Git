@@ -8,6 +8,39 @@
     h1,
     h2,
     h3,
-    header p{
+    header p,
+    .menu{
         margin: 0;
+    }
+    /*Navegación*/
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: linear-gradient(to right, #63c, #c36);
+    }
+    nav a{
+        color: #eee;
+        display: block;
+        padding: .5rem;
+        text-decoration: none;
+    }
+    .btn{
+        margin: .5rem;
+        border: .1rem solid #eee;
+        color: #eee;
+        background-color: transparent;
+    }
+    .btn:hover{
+        background-color: #eee;
+        color: #63c;
+    }
+    .menu{
+        width: 100%;
+        padding: 0;
+        list-style: none;
+    }
+    .menu a:hover{
+        background-color: #3338;
     }
